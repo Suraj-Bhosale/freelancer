@@ -13,15 +13,11 @@
 header div img{
     height: 30px;
     padding-left: 200px;
+    padding-top: 15px;
    
 }
 
-header .content{
-    /* display: flex;
-    flex-direction: row;
-    justify-content: center;
-     align-items: center; */
-}
+
 
 
 header .content svg{
@@ -42,11 +38,7 @@ header nav div h2{
    font-family: 'Open Sans', sans-serif;
 }
 
-.tabs{
- 
-    
 
-}
 
 .tabs  .firstTab{
     display: flex;
@@ -81,8 +73,71 @@ header nav div h2{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+    
 }
 
+.sec-1 .flex-container-sec1{
+    height: 80%;
+    width: 60%;
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+
+}
+
+.sec-1 .flex-container-sec1 .flex-items-sec1{
+    width: 70%;
+    padding: 20px;
+    font-family: Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
+    color: white;
+}
+
+.sec-1 .flex-container-sec1 .flex-items-sec1 h1{
+    font-size: 40px;
+}
+.sec-1 .flex-container-sec1 .flex-items-sec1 .firstLine{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    font-size: 25px;
+}
+
+.sec-1 .flex-container-sec1 .flex-items-sec1 p{
+    font-size: 18px;
+}
+.sec-1 .flex-container-sec1 .flex-items-sec1 ul li{
+    list-style: none;
+}
+
+.sec-1 .flex-container-sec1 .flex-items-sec1 button{
+    background-color: rgb(243, 11, 146);
+    border-radius: 10px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.sec-1 .flex-container-sec1 .flex-items-sec1 button:hover{
+    background-color: rgb(18, 204, 117);
+    border-radius: 10px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
 
 .sec-2{
     height: 60vh;
@@ -213,6 +268,17 @@ div-sec4-main .para .last-block button{
     font-size: 16px;
   }
 
+  div-sec4-main .para .last-block button:hover{ 
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
 div-sec4-main .para p{
     text-align: center;
 } 
@@ -244,7 +310,7 @@ div-sec4-main .para p{
     background-color: whitesmoke;
 }
 
-
+/* Footer */
 
 .footer{
     height: 55vh;
@@ -273,25 +339,40 @@ div-sec4-main .para p{
 .top .flex-container-footer{
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
     gap: 10px;
 }
 
+.top .flex-container-footer .wrap-1{
+    display: flex;
+    flex-direction: column;
+
+}
 .top .flex-container-footer .flex-items-footer{ 
    width: 22%;
    height: 100%;
-   border: 2px solid black;
+   /* border: 2px solid black; */
    color: white;
 }
 
-.footer-a{
-    text-align: left;
+.top .flex-container-footer .flex-items-footer h1{
+    text-align: left-between;
+    color: whitesmoke;
 }
+
+/* .top .flex-container-footer #wrap-one{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+} */
+
+/* .footer-a{
+    text-align: right;
+} */
 .top .flex-container-footer .flex-items-footer ul{ 
     height: 100%;
     list-style-type: none;
-    text-align: left;
+    /* text-align: left; */
     
   }
 
@@ -318,6 +399,11 @@ div-sec4-main .para p{
     font-size: 16px;
 }
 
+.top .flex-container-footer .flex-items-footer img:hover{
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
 .bottom{
     width: 100%;
     height: 20%;
@@ -326,3 +412,10 @@ div-sec4-main .para p{
     text-align:center;
 }
 
+.bottom:hover{
+    width: 100%;
+    height: 20%;
+    color: yellow;
+    padding-top: 30px;
+    text-align:center;
+}
